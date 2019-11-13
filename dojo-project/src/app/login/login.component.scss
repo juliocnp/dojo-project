@@ -1,0 +1,51 @@
+.content {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    .flex {
+        display: flex;
+    }
+    .align-center {
+        align-self: center;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+    .card-login {
+        height: 50%;
+        width: 50%;
+        align-self: center;
+        border: 1px solid #CFDCEB;
+        border-radius: 3px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: "titulo"
+                             "nomes"
+                             "login"
+                             "botao";
+        .titulo {
+            grid-area: titulo;
+        }
+        .nomes {
+            grid-area: nomes;
+        }
+        .login {
+            grid-area: login;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "usuario"
+                                 "senha";
+            .usuario {
+                grid-area: usuario;
+            }
+            .senha {
+                grid-area: senha;
+            }
+        }
+        .botao {
+            grid-area: botao;
+        }
+    }
+}

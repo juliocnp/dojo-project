@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="content">
+    <div class="card-login">
+        <div class="titulo flex justify-center">
+            <h1 class="align-center">Dojo - login</h1>
+        </div>
+        <div class="nomes flex justify-center">
+            <span class="align-center">Douglas10 e JulioShow (Show10)</span>
+        </div>
+        <form class="example-form login flex justify-center">
+            <mat-form-field class="usuario">
+                <input matInput placeholder="usuario">
+            </mat-form-field>
+            
+            <mat-form-field class="senha">
+                <textarea matInput placeholder="Senha"></textarea>
+            </mat-form-field>
+        </form>
+        <div class="botao flex justify-center">
+            <button mat-raised-button color="primary" class="align-center" (click)="logar()">Logar</button>
+        </div>
+    </div>
+</div>

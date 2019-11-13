@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { LoginComponent } from './login/login.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   providers: [LoginService],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LoginService } from './login.service';
 
 @Component({
@@ -6,12 +6,12 @@ import { LoginService } from './login.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'dojo-project';
 
   constructor(private loginService: LoginService) { }
 
-  ngOninit() {
+  ngOnInit() {
     debugger
     const a = this.loginService.login('guildafront@FELChagashotmail.onmicrosoft.com ', '94PgyhlUV7Te').subscribe(
       sucesso => {
